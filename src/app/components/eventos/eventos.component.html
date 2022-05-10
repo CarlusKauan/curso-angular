@@ -2,7 +2,7 @@
   <h1>Eventos</h1>
   <h2 *ngIf="show; else hide">Exibindo Mensagem</h2>
   <ng-template #hide>
-    <h2 [ngStyle]="{'font-size': 1.5 + 'rem'}">Nenhuma Mensagem | style</h2>
+    <h2 [ngStyle]="{'font-size': 1.5 + 'rem'}">Nenhuma Mensagem</h2>
   </ng-template>
   <button (click)="showMessagem()">Exibir</button>
 </div>

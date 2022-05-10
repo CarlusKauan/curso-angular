@@ -16,6 +16,10 @@ export class FirstComponentComponent implements OnInit {
     name: 'Civic',
     year: 2009
   };
+  mission: string = "safe princess"
+  book = ["demon slayer", "Dragon Ball", "One Piece"]
+  frames = ['chopper', 'naruto']
+
 
   // inicia as propriedades no angular, e fazem DI
   constructor() { }

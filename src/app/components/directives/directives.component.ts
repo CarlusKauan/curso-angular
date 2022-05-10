@@ -14,7 +14,7 @@ export class DirectivesComponent implements OnInit {
   upper = 'uppercase';
 
   // adicionar classes em uma array
-  classes = ['green-title', 'small-title']
+  classes = ['green-title', 'small-title', 'underline-title']
 
   // adicionando string que com [ngClass]="underline", vira uma class
   underline = 'underline-title'

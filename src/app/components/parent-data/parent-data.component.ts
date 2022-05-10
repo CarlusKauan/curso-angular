@@ -10,6 +10,7 @@ export class ParentDataComponent implements OnInit {
   @Input() name: String = '';
   @Input() age: any = '';
   @Input() userData!: {email: string, role: string};
+  @Input() status = '';
 
   constructor() { }
 

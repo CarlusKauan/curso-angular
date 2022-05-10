@@ -1,13 +1,14 @@
 
-<h1>Hello World</h1>
-
-<a href="#">Clique Aqui</a>
+<div class="class">
+  <h1>Hello World</h1>
+  <a href="#">Clique Aqui Animal</a>
+</div>
 
 <!-- Meu milesímo component -->
 <app-first-component></app-first-component>
 
 <!-- Compartilhamento de Dados -->
-<app-parent-data [name]="Username" [age]="Age" [userData]="userData"></app-parent-data>
+<app-parent-data [name]="Username" [age]="Age" [userData]="userData" [status]="userStatus"></app-parent-data>
 
 <!-- App directives -->
 <app-directives></app-directives>
@@ -16,6 +17,9 @@
 
 <!-- eventos -->
 <app-eventos></app-eventos>
+
+<!-- emitir eventos -->
+<app-emmiter></app-emmiter>
 
 <!-- app  -->
 <router-outlet></router-outlet>

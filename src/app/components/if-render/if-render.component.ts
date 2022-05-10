@@ -9,11 +9,11 @@ export class IfRenderComponent implements OnInit {
 
   canShow: boolean = true
 
-  name: string = "Ronaldo"
+  name: string = "Kaique"
 
   nameNotFound: string = "Ninguem"
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

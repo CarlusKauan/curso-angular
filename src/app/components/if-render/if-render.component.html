@@ -1,7 +1,11 @@
 <!-- render if else -->
 <div class="class">
   <div *ngIf="canShow">Estamos mostrando isso porque foi permitido</div>
-  <h2 *ngIf="name === 'Carlos' || name === 'Kaique'; else nameNotFound">O nome é {{name}}</h2>
+  <h2
+    *ngIf="name === 'Kauan' || name === 'Kaique' || name === 'Kewen';
+    else nameNotFound">
+    O nome é {{name}}
+  </h2>
   <ng-template #nameNotFound>
     <div>
       <h2>Nome não foi encontrado</h2>

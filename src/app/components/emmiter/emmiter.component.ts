@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./emmiter.component.css'],
 })
 export class EmmiterComponent implements OnInit {
-  number: Number = 19;
-
   myNumber: number = 0
 
   // emissão

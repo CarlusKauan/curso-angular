@@ -1,0 +1,21 @@
+<div class="class">
+
+  <h1>Renderizando Listas com *ngFor</h1>
+
+  <h2>Animais</h2>
+  <ul *ngFor="let animal of animals">
+    <li> {{ animal.name }} - {{ animal.type }}</li>
+  </ul>
+
+  <h2 [ngStyle]="{'font-size': 20 + 'px'}">Animes</h2>
+  <ul *ngFor="let anime of animes">
+    <li> {{ anime.name }} = {{ anime.price }}$ </li>
+  </ul>
+
+  <h2 [ngStyle]="{'font-size': 20 + 'px'}">Techs</h2>
+  <ul *ngFor="let tech of techs">
+    <li> {{ tech.name}} made in {{ tech.made }} </li>
+  </ul>
+</div>
+
+

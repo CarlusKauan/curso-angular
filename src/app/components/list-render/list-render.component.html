@@ -1,16 +1,22 @@
 <div class="class">
 
   <h1>Renderizando Listas com *ngFor</h1>
-
-  <h2>Animais</h2>
   <ul *ngFor="let animal of animals">
     <li> {{ animal.name }} - {{ animal.type }}</li>
   </ul>
 
+
   <h2 [ngStyle]="{'font-size': 20 + 'px'}">Animes</h2>
   <ul *ngFor="let anime of animes">
-    <li> {{ anime.name }} = {{ anime.price }}$ </li>
+    <li>
+       {{ anime.name }} = {{ anime.price }}$
+      <button (click)="showAge(anime)">Show Age</button>
+      <button (click)="removeAnime(anime)">Remove Anime</button>
+      <button (click)="adicionarAnime(anime)">Adicionar Anime</button>
+    </li>
   </ul>
+  <h3> {{ animeAge }} </h3>
+
 
   <h2 [ngStyle]="{'font-size': 20 + 'px'}">Techs</h2>
   <ul *ngFor="let tech of techs">

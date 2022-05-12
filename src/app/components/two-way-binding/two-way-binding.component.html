@@ -1,0 +1,17 @@
+<div class="class">
+  <h2>Two-way-binding</h2>
+  <form action="">
+    <input type="text" [(ngModel)]="name"
+    name="name"
+    placeholder="Digite o seu nick">
+    <br>
+    <input type="text" [(ngModel)]="team"
+    name="team"
+    placeholder="Digite o seu time">
+
+    <input type="submit" value="Click" (click)="info()">
+
+  </form>
+  <p *ngIf="name !== ''">O nome é: {{ name }}</p>
+  <p *ngIf="team !== ''">O seu time é {{ team }}</p>
+</div>
